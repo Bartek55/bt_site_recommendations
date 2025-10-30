@@ -46,3 +46,6 @@ build/
 *.tmp
 *.temp
 /tmp/
+
+# Screenshots (add manually when ready)
+screenshots/
