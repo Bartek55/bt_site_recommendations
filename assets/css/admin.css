@@ -1,0 +1,484 @@
+/**
+ * Admin CSS for BT Site Recommendations
+ */
+
+/* Container */
+.bt-site-recommendations-wrap {
+    margin: 20px 20px 20px 0;
+}
+
+.bt-sr-tabs-container {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+/* Tabs */
+.bt-sr-tabs-container .nav-tab-wrapper {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ccd0d4;
+}
+
+.nav-tab .dashicons {
+    font-size: 16px;
+    height: 16px;
+    width: 16px;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+}
+
+/* Tab Content */
+.bt-sr-tab-content {
+    padding: 20px;
+}
+
+/* Cards */
+.bt-sr-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.bt-sr-card h2 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bt-sr-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.bt-sr-card .dashicons {
+    margin-right: 5px;
+}
+
+/* Features List */
+.bt-sr-features-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.bt-sr-features-list li {
+    padding: 5px 0;
+}
+
+.bt-sr-features-list .dashicons {
+    color: #46b450;
+    margin-right: 8px;
+}
+
+/* Capabilities List */
+.bt-sr-capabilities-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.bt-sr-capabilities-list li {
+    padding: 3px 0;
+}
+
+/* Connection Status */
+.bt-sr-connection-status {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.bt-sr-connection-status .success {
+    color: #46b450;
+}
+
+.bt-sr-connection-status .error {
+    color: #dc3232;
+}
+
+.bt-sr-connection-status .testing {
+    color: #f0a000;
+}
+
+.bt-sr-connection-status .dashicons {
+    vertical-align: middle;
+}
+
+/* Progress Indicator */
+.bt-sr-progress-card {
+    background: #f0f6fc;
+    border-left: 4px solid #2271b1;
+}
+
+.bt-sr-progress-bar {
+    width: 100%;
+    height: 30px;
+    background: #e0e0e0;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.bt-sr-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #2271b1, #0c5a99);
+    width: 0;
+    animation: progress 2s ease-in-out infinite;
+}
+
+@keyframes progress {
+    0% { width: 0; }
+    50% { width: 70%; }
+    100% { width: 100%; }
+}
+
+.bt-sr-progress-text {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+/* Results */
+.bt-sr-subsection {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 3px solid #2271b1;
+}
+
+.bt-sr-issue-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.bt-sr-issue-list li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.bt-sr-issue-list li strong {
+    color: #2271b1;
+}
+
+.no-issues {
+    padding: 15px;
+    background: #d7f8e0;
+    border: 1px solid #46b450;
+    border-radius: 3px;
+    color: #155724;
+}
+
+/* Severity Badges */
+.severity-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.severity-critical {
+    background: #dc3232;
+    color: #fff;
+}
+
+.severity-high {
+    background: #f0a000;
+    color: #fff;
+}
+
+.severity-medium {
+    background: #ffb900;
+    color: #000;
+}
+
+.severity-low {
+    background: #00a0d2;
+    color: #fff;
+}
+
+.severity-warning {
+    background: #f0a000;
+    color: #fff;
+}
+
+.severity-info {
+    background: #72aee6;
+    color: #fff;
+}
+
+/* Tables */
+.bt-sr-card table.widefat {
+    margin-top: 15px;
+}
+
+.bt-sr-card table.widefat th {
+    font-weight: 600;
+}
+
+.bt-sr-card table.widefat td code {
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+/* Statistics Grid */
+.bt-sr-stats-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+.bt-sr-stats-card h2 {
+    color: #fff;
+}
+
+.bt-sr-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.bt-sr-stat {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
+.bt-sr-stat-label {
+    display: block;
+    font-size: 13px;
+    opacity: 0.9;
+    margin-bottom: 5px;
+}
+
+.bt-sr-stat-value {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Summary Card */
+.bt-sr-summary-card {
+    background: #f0f6fc;
+    border-left: 4px solid #2271b1;
+}
+
+.bt-sr-summary-card h2 {
+    color: #2271b1;
+}
+
+/* Batch Actions */
+.bt-sr-batch-actions {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.bt-sr-batch-actions .button {
+    margin-right: 10px;
+}
+
+/* Buttons */
+.button-large .dashicons {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Save Message */
+#bt-sr-save-message {
+    margin-top: 15px;
+}
+
+#bt-sr-save-message .notice {
+    margin: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .bt-sr-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-tab .dashicons {
+        display: none;
+    }
+    
+    .bt-sr-card {
+        padding: 15px;
+    }
+}
+
+/* Loading State */
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Checkboxes in tables */
+table.widefat input[type="checkbox"] {
+    margin: 0;
+}
+
+/* Form table improvements */
+.form-table th {
+    width: 200px;
+}
+
+.form-table fieldset label {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* Select all checkbox */
+.select-all-webp,
+.select-all-alt {
+    cursor: pointer;
+}
+
+/* Batch progress */
+#bt-sr-batch-progress {
+    margin-top: 20px;
+}
+
+#bt-sr-batch-results {
+    margin-top: 15px;
+}
+
+#bt-sr-batch-results .notice {
+    margin: 0;
+}
+
+/* Plugin Recommendations Grid */
+.bt-sr-plugins-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.bt-sr-plugin-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.bt-sr-plugin-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bt-sr-plugin-card h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #2271b1;
+    font-size: 16px;
+}
+
+.bt-sr-plugin-card p {
+    font-size: 13px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.bt-sr-plugin-card .button {
+    margin-top: 10px;
+}
+
+/* Page Speed and SEO Impact */
+.page-speed-impact,
+.seo-impact {
+    display: block;
+    padding: 8px 12px;
+    background: #f0f6fc;
+    border-left: 3px solid #2271b1;
+    margin: 8px 0;
+    font-size: 13px;
+    color: #2271b1;
+}
+
+.seo-impact {
+    background: #f0f9ff;
+    border-left-color: #00a0d2;
+    color: #00a0d2;
+}
+
+.page-speed-impact .dashicons,
+.seo-impact .dashicons {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Page Speed Summary */
+.bt-sr-page-speed-summary {
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.bt-sr-page-speed-summary .dashicons {
+    vertical-align: middle;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Highlight Card */
+.bt-sr-highlight-card {
+    background: linear-gradient(135deg, #f0f6fc 0%, #e7f2fa 100%);
+    border-left: 4px solid #2271b1;
+}
+
+/* Improvement Summary */
+.bt-sr-improvement-summary {
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.improvement-item {
+    padding: 10px 15px;
+    margin: 8px 0;
+    background: #f9f9f9;
+    border-left: 3px solid #2271b1;
+    font-size: 14px;
+}
+
+.improvement-item .dashicons {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Lazy Loading Status */
+.bt-sr-lazy-loading-status {
+    margin-top: 10px;
+}
+
+.bt-sr-lazy-loading-status .notice {
+    margin: 0;
+}
+
+/* Issue Text */
+.issue-text {
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Responsive Plugin Grid */
+@media screen and (max-width: 782px) {
+    .bt-sr-plugins-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
