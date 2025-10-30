@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: BT Site Recommendations
- * Plugin URI: https://your-website.com
+ * Plugin URI: https://github.com/Bartek55/bt_site_recommendations
  * Description: AI-powered site analysis using GPT-5 or Claude Sonnet 4.5 to provide code, database, and image optimization recommendations.
  * Version: 1.0.0
  * Author: Bartek Trociuk
