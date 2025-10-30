@@ -1,0 +1,356 @@
+/**
+ * BT Site Recommendations Admin Styles
+ */
+
+.bt-site-recommendations {
+    max-width: 1200px;
+}
+
+.bt-container {
+    margin-top: 20px;
+}
+
+.bt-header {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    margin-bottom: 20px;
+}
+
+.bt-intro {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #3c434a;
+    margin-bottom: 20px;
+}
+
+#bt-analyze-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#bt-analyze-btn .dashicons {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.bt-spinner {
+    background: #fff;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.bt-spinner .spinner {
+    float: none;
+    margin: 0 auto 10px;
+}
+
+.bt-spinner p {
+    font-size: 16px;
+    color: #3c434a;
+}
+
+.bt-results-header {
+    background: #fff;
+    padding: 20px 30px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    margin-bottom: 20px;
+}
+
+.bt-results-header h2 {
+    margin: 0 0 10px;
+}
+
+.bt-results-date {
+    color: #646970;
+    margin: 0;
+}
+
+/* Metrics Grid */
+.bt-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.bt-metric-card {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bt-metric-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2271b1;
+    border-radius: 8px;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.bt-metric-icon .dashicons {
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+}
+
+.bt-metric-content {
+    flex: 1;
+}
+
+.bt-metric-content h3 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #646970;
+}
+
+.bt-metric-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1d2327;
+    margin: 0;
+    line-height: 1;
+}
+
+.bt-metric-label {
+    font-size: 12px;
+    color: #646970;
+    margin: 5px 0 0;
+}
+
+/* Tabs */
+.bt-tabs {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.bt-tabs-nav {
+    display: flex;
+    border-bottom: 1px solid #ccd0d4;
+    background: #f6f7f7;
+}
+
+.bt-tab-button {
+    padding: 15px 25px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3c434a;
+    transition: all 0.2s;
+}
+
+.bt-tab-button:hover {
+    background: #fff;
+    color: #2271b1;
+}
+
+.bt-tab-button.active {
+    background: #fff;
+    color: #2271b1;
+    border-bottom-color: #2271b1;
+}
+
+.bt-tabs-content {
+    padding: 30px;
+}
+
+.bt-tab-pane {
+    display: none;
+}
+
+.bt-tab-pane.active {
+    display: block;
+}
+
+/* Recommendations */
+.bt-recommendation {
+    background: #fff;
+    border-left: 4px solid #646970;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bt-recommendation.priority-critical {
+    border-left-color: #d63638;
+}
+
+.bt-recommendation.priority-high {
+    border-left-color: #f56e28;
+}
+
+.bt-recommendation.priority-medium {
+    border-left-color: #dba617;
+}
+
+.bt-recommendation.priority-low {
+    border-left-color: #00a32a;
+}
+
+.bt-recommendation-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bt-recommendation-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.bt-recommendation-title h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.bt-priority-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.bt-priority-badge.priority-critical {
+    background: #d63638;
+    color: #fff;
+}
+
+.bt-priority-badge.priority-high {
+    background: #f56e28;
+    color: #fff;
+}
+
+.bt-priority-badge.priority-medium {
+    background: #dba617;
+    color: #fff;
+}
+
+.bt-priority-badge.priority-low {
+    background: #00a32a;
+    color: #fff;
+}
+
+.bt-recommendation-category {
+    font-size: 12px;
+    color: #646970;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.bt-recommendation-description {
+    margin: 10px 0;
+    color: #3c434a;
+    line-height: 1.6;
+}
+
+.bt-recommendation-actions {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #dcdcde;
+}
+
+.bt-recommendation-actions h4 {
+    margin: 0 0 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #646970;
+}
+
+.bt-recommendation-actions ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.bt-recommendation-actions li {
+    margin-bottom: 5px;
+    color: #3c434a;
+    line-height: 1.5;
+}
+
+/* Empty State */
+.bt-empty-state {
+    text-align: center;
+    padding: 40px;
+    color: #646970;
+}
+
+.bt-empty-state .dashicons {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    opacity: 0.5;
+}
+
+.bt-empty-state p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* Impact Badge */
+.bt-impact-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #f0f0f1;
+    color: #3c434a;
+}
+
+.bt-impact-badge .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+    .bt-metrics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bt-tabs-nav {
+        flex-direction: column;
+    }
+
+    .bt-tab-button {
+        text-align: left;
+        border-left: 3px solid transparent;
+        border-bottom: none;
+    }
+
+    .bt-tab-button.active {
+        border-left-color: #2271b1;
+        border-bottom-color: transparent;
+    }
+}
