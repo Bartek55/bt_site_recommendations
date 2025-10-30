@@ -5,7 +5,7 @@ Requires at least: 5.0
 Tested up to: 6.4
 Stable tag: 1.0.0
 Requires PHP: 7.4
-License: GPLv3 or later
+License: GPL-3.0+
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 AI-powered WordPress plugin that analyzes your site to provide Page Speed and SEO optimization recommendations.
